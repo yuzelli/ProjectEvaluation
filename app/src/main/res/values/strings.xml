@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProjectEvaluation</string>
+
+    <!--登录界面-->
+    <string name="login">登录</string>
+    <string name="password">请输入密码</string>
+    <string name="phone">请输入手机号</string>
+    <string name="register_user">注册用户</string>
+    <string name="register">注册</string>
+    <string name="certain_password">请确认密码</string>
+    <string name="verification_code">请输入验证码：</string>
+    <string name="img_description">图片</string>
+</resources>

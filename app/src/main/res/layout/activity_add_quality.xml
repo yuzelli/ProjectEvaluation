@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_quality"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.example.yuzelli.projectevaluation.view.activity.AddQualityActivity">
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:text="质量评价"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_head">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_alignParentStart="true"
+                    android:text="项目名称" />
+
+                <TextView
+                    android:id="@+id/tv_project_name"
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_alignParentStart="true"
+                    android:text="时间" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/img_right1"
+                    />
+                <ImageView
+                    android:id="@+id/img_right1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/img_description"
+                    android:src="@mipmap/ic_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_density"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_alignParentStart="true"
+                    android:text="缺陷密度" />
+
+                <TextView
+                    android:id="@+id/tv_density"
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/img_right2"
+                    android:layout_marginRight="15dp"
+                    />
+                <ImageView
+                    android:id="@+id/img_right2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/img_description"
+                    android:src="@mipmap/ic_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_stage_process"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_alignParentStart="true"
+                    android:text="阶段过程效应" />
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/img_description"
+                    android:src="@mipmap/ic_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+            <TextView
+                android:id="@+id/tv_stage_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:lines="4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_process"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_alignParentStart="true"
+                    android:text="过程效应" />
+
+                <ImageView
+                    android:id="@+id/iv_right1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/img_description"
+                    android:src="@mipmap/ic_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+            <TextView
+                android:id="@+id/tv_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:lines="4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_eliminate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_alignParentStart="true"
+                    android:text="整体清除率" />
+
+                <TextView
+                    android:id="@+id/tv_eliminate"
+                    style="@style/PersonalInfoTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/img_right3"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_right3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/img_description"
+                    android:src="@mipmap/ic_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_login_button"
+                android:text="完成"
+                android:textColor="@color/ivory"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="查询"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_cancel" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_close"
+        android:layout_marginTop="10dp"
+        android:background="#3B9DE7" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_ship2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_hint3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="项目名称："
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/tv_hint3"
+            android:background="@drawable/bg_popup_order_refund_et_shape"
+            android:inputType="text"
+            android:lines="2"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_ship2"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/tv_cancel"
+        android:layout_toStartOf="@+id/tv_cancel"
+        android:background="@drawable/view_shape"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_ship2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_cancel_shape"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="取消"
+        android:textSize="20sp" />
+</RelativeLayout>
